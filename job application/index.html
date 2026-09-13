@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+
+    <form action="application.html">
+        <label for="Firstname">First Name</label><br>
+        <input type="text" name="Firstname"><br>
+
+        <label for="Middlename">Middle Name</label><br>
+        <input type="text" name="Middlename"><br>
+
+        <label for="lastname">last Name</label><br>
+        <input type="text" name="lastname"><br>
+
+        <label for="age">Age</label>
+        <input type="number" min="0" max="120">
+
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+
+        <label for="address">Address</label>
+        <textarea name="address" id="address"></textarea><br>
+
+        <label for="CV">Upload your CV-pdf only</label>
+        <input type="file" accept="application/pdf, .pdf">
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+<!-- ---biodata---
+    first name,middle name,last name
+    address
+    age 
+    gender
+
+    ---education---
+    qualification
+    college name
+
+
+    ---work experience---
+    years of experience
+    industry
+
+    ---skills---
+    add your skills
+
+    ---upload cv---
+    pdf -->
