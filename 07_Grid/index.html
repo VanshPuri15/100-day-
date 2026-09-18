@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDS</title>
+
+    <style>
+        /* main{
+            display: flex;
+            flex-wrap: wrap;
+        } */
+        main{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            
+
+        }
+        .box{
+            height: 5rem;
+            width: 100%;
+            /* margin: 1rem; */
+            background-color: skyblue;
+            border: 1px blue solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            height: 2rem;
+            width: 2rem;
+            background-color: chartreuse;
+            border-radius: 0.5rem;
+        }
+        .box7{
+            grid-column-start:2;
+            grid-column-end: 4;
+        }
+        .box8{
+            grid-column-start:4 ;
+            grid-column-end: -1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <main>
+        <div class="box"><button class="btn">1</button></div>
+        <div class="box"><button class="btn">2</button></div>
+        <div class="box"><button class="btn">3</button></div>
+        <div class="box"><button class="btn">4</button></div>
+        <div class="box"><button class="btn">5</button></div>
+        <div class="box"><button class="btn">6</button></div>
+        <div class="box box7"><button class="btn">7</button></div>
+        <div class="box box8"><button class="btn">8</button></div>
+        <div class="box"><button class="btn">9</button></div>
+        <div class="box"><button class="btn">10</button></div>
+        <div class="box"><button class="btn">11</button></div>
+        <div class="box"><button class="btn">12</button></div>
+        <div class="box"><button class="btn">13</button></div>
+        <div class="box"><button class="btn">14</button></div>
+        <div class="box"><button class="btn">15</button></div>
+    </main>
+
+</body>
+
+</html>
